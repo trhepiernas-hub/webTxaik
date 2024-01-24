@@ -1,0 +1,18 @@
+---
+const { imagenSrc, product, productDesc } = Astro.props;
+---
+
+<div
+    class="col-span-1 row-span-1 min-h-[50vh] grid grid-rows-2 bg-zinc-700 rounded-2xl border-4"
+>
+    <section class="row-span-1 w-1/2 items-center mx-auto">
+        <img src={imagenSrc} alt="Imagen del producto" />
+    </section>
+    <section class="block row-span-1 mx-auto">
+        <h2 class="text-4xl ml-auto mr-auto">{product}</h2>
+        <br />
+        <p class="">{productDesc}</p>
+    </section>
+</div>
+
+<style></style>
